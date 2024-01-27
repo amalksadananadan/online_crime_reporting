@@ -1,0 +1,95 @@
+{% extends 'stationhome.html' %}
+{% block content %}
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+<h3 class="w3l-titles">Missing Case</h3>
+<form action="{% url 'assignmissing' key.cid %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table  align="center">
+
+        <tr>
+            <th>MISSING PERSON DETAILS</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" value="{{key.name}}"/><br></td>
+        <tr>
+            <td>Gender</td>
+        {% if key.gender == "male" %}
+            <td><input type="radio"value="male"name="gen" checked>male</td>
+            <td><input type="radio"value="female"name="gen">female</td>
+        {% else %}
+        <td><input type="radio"value="male"name="gen" >male</td>
+            <td><input type="radio"value="female"name="gen" checked>female</td>
+        {% endif %}
+
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="text" name="age" value="{{key.age}}"/><br></td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td><input type="text" name="height" value="{{key.height}}"/><br></td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td><input type="text" name="color" value="{{key.color}}"/><br></td>
+        </tr>
+        <tr>
+            <td>Identical Marks</td>
+            <td><input type="text" name="imarks" value="{{key.imarks}}"/><br></td>
+        </tr>
+        <tr>
+            <td>Missing Date</td>
+            <td><input type="date" name="mdate" value="{{key.mdate}}"/><br></td>
+        </tr>
+        <tr><br><br>
+            <td>Remarks</td>
+            <td><textarea name="remarks" placeholder="Remarks" >{{key.remarks}}</textarea><br><br></td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><img src="/media/{{key.photo}}" height="150" width="150"><br></td>
+        </tr>
+
+<tr>
+    <td>Select Officer</td><td>
+    <select name="opn" >
+        <option value="0">--select--</option>
+        {% for i in off %}
+        <option value="{{i.id}}">{{i.officername}}</option>
+        {% endfor %}
+    </select>
+</td>
+</tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Assign"> </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
+{% endblock %}

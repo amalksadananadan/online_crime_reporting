@@ -1,0 +1,55 @@
+{% extends 'adminhome.html' %}
+{% block content %}
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+        		                	    <script type="text/javascript" src="{% static 'validation.js' %}"></script>
+
+</head>
+<body>
+<form action="{% url 'stationupdate' id=key.id %}" method="post" name="f4">
+    {% csrf_token %}
+    <table  align="center">
+        <tr>
+            <td>Station</td>
+            <td><input type="text" name="sname" value="{{key.sname}}" required onchange="return fn_allLetter(document.f4.sname);"/><br></td>
+        </tr>
+        <tr>
+            <td>Station Code</td>
+            <td><input type="text" name="scode" value="{{key.scode}}" required onchange="return fn_checknumber(document.f4.scode);"/><br></td>
+        </tr>
+        <tr>
+            <td>Emergency number</td>
+            <td><input type="text" name="enum" value="{{key.enum}}" required onchange="return fn_checknumber(document.f4.enum);"/><br></td>
+        </tr>
+        <tr>
+            <td>Contact number</td>
+            <td><input type="text" name="cnum" value="{{key.cnum}}" required onchange="return fn_checknumber(document.f4.cnum);"/><br></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Update"> </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,1000 @@
+
+
+{%load static %}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+       <title>crime</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+        <link rel="icon" type="image/png" href="{% static 'indextemp/images/legal.png' %}">
+
+        <!--Bootstrap-->
+        <link href="{% static 'indextemp/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+
+        <!--font Awesome-->
+        <link href="{% static 'indextemp/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+
+        <!--slider-->
+        <link href="{% static 'indextemp/css/owl.carousel.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'indextemp/css/animate.css' %}" rel="stylesheet" type="text/css">
+
+        <!--Animation-->
+        <link href="{% static 'indextemp/css/animations.css' %}" rel="stylesheet" type="text/css">
+
+        <!--main file-->
+        <link href="{% static 'indextemp/css/style.css' %}" rel="stylesheet" type="text/css">
+
+        <!--Responsive file-->
+        <link href="{% static 'indextemp/css/responsive.css' %}" rel="stylesheet" type="text/css">
+
+    <ContentPlaceHolder id="head" runat="server">
+    </ContentPlaceHolder>
+</head>
+<body>
+       <!--Start Header-->
+        <div class="wellcome_banner">
+
+            <header id="header1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-2 col-md-2">
+                            <div class="logo">
+                                <a href="index-2.html"><img src="{% static 'indextemp/images/white_logo.png' %}" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 col-sm-7">
+                            <nav>
+                                <ul>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="active dropdown-toggle" data-toggle="dropdown">Home</a>
+
+                                    </li>
+
+
+
+                                    <!--<li class="dropdown">
+                                        <a href="#" data-toggle="dropdown" class=" dropdown-toggle">About</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">About</a></li>
+                                         <li><a href="#">FAQ's</a></li>
+                                            <li><a href="#">Error 404</a></li>
+                                        </ul>
+                                    </li>-->
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Register</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="{% url 'citizenreg' %}">Citizen Registration</a></li>
+                                           <li><a href="{% url 'lawerreg' %}">Lawyer Registration</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li><a href="{% url 'login' %}">Sign In</a></li>
+
+                                   <li class="dropdown">
+
+                                    <!--<li><a href="#">Contact</a></li>-->
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!--<div class="col-sm-1 col-md-1">
+
+                            <form action="#">
+                                <input type="text"  placeholder="search" />
+                                <input type="submit" value=""/>
+                            </form>
+
+                        </div>-->
+
+                        <!--<div class="col-sm-2 col-md-2">
+
+                            <a href="#" class="button yellow">free consultation</a>
+
+                        </div>-->
+
+                    </div>
+                </div>
+            </header>
+
+
+
+            <!--Responsive Nav-->
+            <div class="responsive_button">
+                <p>Home</p>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="responsive_nav collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home Two</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">practise areas</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">News Two</a></li>
+                    <li><a href="#">News Detail</a></li>
+                    <li><a href="#">Attorney</a></li>
+                    <li><a href="#">Attorney Detail</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!--Responsive Nav-->
+
+            <div class="main_slider owl-carousel owl-theme">
+                <div class="item">
+                    <img src="{% static 'indextemp/images/3.jpg' %}"/>
+                    <!--<div class="slide_content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <h3>your personal legal firm</h3>
+                                    <h1> <br /> </h1>
+                                    <%--<a href="#" class="button yellow">Learn More</a> <a href="#" class="button yellow">Start your case</a>--%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="item">
+                    <img src="{% static 'indextemp/images/5.jpg' %}" />
+                    <!--<div class="slide_content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <h3>your personal legal firm</h3>
+                                    <h1> <br />  </h1>
+                                    <%--<a href="#" class="button yellow">Learn More</a> <a href="#" class="button yellow">Start your case</a>--%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+        </div>
+        <!--End Header-->
+
+
+        <!--Start Features-->
+        <div class="features_wrap seaction_margin">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4 col-md-4 feature animated fade">
+                        <img src="{% static 'indextemp/images/firm.png' %}" alt="">
+                        <h3>award winning  firm</h3>
+                        <p>We are proud to have risen from 86th place last year to 44th place, .<br />
+                          including being awarded an additional ‘learning and development’ accolade in 2016.
+                           </p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 feature animated fade">
+                        <img src="{% static 'indextemp/images/consult.png' %}" alt="">
+                        <h3>low cost consultation</h3>
+                        <p> using our Low Cost Consultation strategy will give you the  <br />
+                            competitive edge over other architecture firms</p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 feature animated fade">
+                        <img src="{% static 'indextemp/images/advice.png' %}" alt="">
+                        <h3>best legal advice</h3>
+                        <p>Once you choose a lawyer, getting the best advice can be achieved if you and  <br />
+                           your lawyer work to have a trusting relationship and effective communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End  Features-->
+
+
+        <!--Start Company info-->
+        <div class="info_wrap seaction_margin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="info animated hatch">
+                            <h5 class="heading_a ">legal eagle</h5>
+                            <h3 class="heading_b">more than 25 year’s <br />
+                                of experience</h3>
+                            <p>
+                        " All men make mistake, but a good man yield when he knows his course is wrong, and repairs the evil.the onlycrime is pride..."
+                            </p>
+                            <img src="{% static 'indextemp/images/small_img.png' %}" alt="" class="pull-right">
+                           <%-- <a href="#" class="button yellow">read more</a>--%>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="info_img  animated hatch">
+                            <img src="{% static 'indextemp/images/big_img.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Company info-->
+     <!--Start Practice Area -->
+        <div class="services_wrap">
+            <div class="heading_section animated fade">
+                <h5 class="heading_c">legal eagle</h5>
+                <h3 class="heading_b">We Provide</h3>
+                <p>Dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt labore</p>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4 col-md-4 ">
+                        <div class="services animated slide">
+                            <figure><i class="fa fa-book" aria-hidden="true"></i></figure>
+                            <h4>Join Our Team</h4>
+                            <p>The Pinellas Park Police Department has an authorized
+                                strength of 111 full time police officers. The Recruiting Unit is
+                                 responsible for the recruitment and background investigation of all
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide">
+                            <figure><i class="fa fa-heartbeat" aria-hidden="true"></i></figure>
+                            <h4>Submit A Crime Tip</h4>
+                            <p>We ask the public to use this web portal to report
+                                 illegal activity, such as unsolved cases, theft, the sale and distribution of drugs
+                                or information about crimes that are being planned in the community or in schools.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide" >
+                            <figure><i class="fa fa-balance-scale" aria-hidden="true"></i></figure>
+                            <h4>File a Report Online</h4>
+                            <p>Using this online citizen police report system allows you to submit a
+                                 report immediately and obtain an unofficial copy of the police report for your records.
+                                 Before using the online reporting system, be aware that the incident
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide">
+                            <figure><i class="fa fa-file-text" aria-hidden="true"></i></figure>
+                            <h4>Complaint About an Officer</h4>
+                            <p>Often while conducting their daily assignments, police officers
+                                and other members of our agency provide service that
+                                 goes above and beyond what is expected from the community.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide">
+                            <figure><i class="fa fa-home" aria-hidden="true"></i></figure>
+                            <h4>Emergency Management</h4>
+                            <p>Launched 2003, Ready is a National public service campaign
+                                 designed to educate and empower the American people to prepare for, respond to and mitigate emergencies, including natural and man-made disasters.
+                                The goal of the campaign is to promote preparedness through public involvement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide ">
+                            <figure><i class="fa fa-car" aria-hidden="true"></i></figure>
+                            <h4>Crime Prevention Unit</h4>
+                            <p>The Crime Prevention Unit is responsible for obtaining
+                                 and correlating information services or products
+                                 relating to crime prevention from various resources.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Practice Area -->
+
+
+
+        <!--Start Practice Area -->
+       <%-- <div class="services_wrap">
+            <div class="heading_section animated fade">
+                <h5 class="heading_c">legal eagle</h5>
+                <h3 class="heading_b">our practice areas</h3>
+                <p>we provide...</p>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4 col-md-4 ">
+                        <div class="services animated slide">
+                            <figure><i class="fa fa-book" aria-hidden="true"></i></figure>
+                            <h4>patent laws</h4>
+                            <p>Patent law is the branch of intellectual property law that deals with new inventions.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide">
+                            <figure><i class="fa fa-heartbeat" aria-hidden="true"></i></figure>
+                            <h4>Personal Injury</h4>
+                            <p>Personal injury cases are legal disputes that arise when one person suffers harm from an accident or injury
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide" >
+                            <figure><i class="fa fa-balance-scale" aria-hidden="true"></i></figure>
+                            <h4>criminal laws</h4>
+                            <p>Criminal laws are a reflection of certain values of the society in which the laws exist.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide">
+                            <figure><i class="fa fa-file-text" aria-hidden="true"></i></figure>
+                            <h4>industrial cases</h4>
+                            <p>The industrial industry employs a large part of our population as it encompasses a large variety of productive services. ,
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide">
+                            <figure><i class="fa fa-home" aria-hidden="true"></i></figure>
+                            <h4>real estate law</h4>
+                            <p>The term real estate generally refers to ownership or use of land .dsdsdsdsdsd
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="services animated slide ">
+                            <figure><i class="fa fa-car" aria-hidden="true"></i></figure>
+                            <h4>car accident</h4>
+                            <p>A car accident, also referred to as a “traffic collision,” or a “motor vehicle accident ,”
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Practice Area -->--%>
+
+
+        <!--Start Skills -->
+        <div class="skill_wrap seaction_margin">
+            <div class="skill_content   animated fade">
+                <h5 class="heading_a">legal eagle</h5>
+                <h4 class="heading_b">We are a dedicated team <br />
+                    with skills</h4>
+                <p>Keep your dreams alive. Understand to achieve anything requires faith and belief in yourself,s determination, and dedication.
+
+                </p>
+
+                <div class="progress_bar_wrap" id="progress_bars">
+
+                    <label>civil & criminal laws</label>
+
+                    <div class="progress ">
+                        <div class="bar one"  data-percent="80" style="width: 80%;"> <span class="labels">80%</span></div>
+                    </div>
+
+                    <label>Personalized Attention</label>
+                    <div class="progress">
+                        <div class="bar yellow two"  data-percent="98" style="width: 98%;"> <span>98%</span></div>
+                    </div>
+
+                    <label>trademarks & patents</label>
+                    <div class="progress">
+                        <div class="bar three"  data-percent="90" style="width: 90%;"> <span>90%</span></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="skill_img  animated fade ">
+                <figure>
+                    <img src="{% static 'indextemp/images/2.jpg' %}" alt="">
+                </figure>
+            </div>
+        </div>
+        <!--End Skills -->
+
+        <div class="seaction_margin">
+            <div class="container">
+                <div class="row">
+
+                    <!--Start Consultation -->
+                    <%--<div class="col-sm-6 col-md-6">
+                        <div class="consultation  animated entrance">
+                            <h5 class="heading_a">legal eagle</h5>
+                            <h4 class="heading_b">free consultation</h4>
+                            <p>Adipisicing elit sed do eiusmod tempor incid dunt ut labore et dolore mag aliqua <br />
+                                veniam quis nostrud exercitation ullamco.
+                            </p>
+
+                            <form action="http://shmai.com/preview/legaleagle-html/process.php" method="post" id="consult_form" class="row ">
+                                <fieldset class="col-sm-6 col-md-6 field-control">
+                                    <input type="text" placeholder="Full Name" name="user_name" class="form-control">
+                                    <label></label>
+                                </fieldset>
+                                <fieldset class="col-sm-6 col-md-6 field-control">
+                                    <input type="email" placeholder="Email" name="user_email" class="form-control">
+                                    <label></label>
+                                </fieldset>
+                                <fieldset class="col-sm-6 col-md-6 field-control">
+                                    <input type="text" placeholder="Phone #" name="phone" class="form-control">
+                                    <label></label>
+                                </fieldset>
+                                <fieldset class="col-sm-6 col-md-6 field-control">
+                                    <input type="text" placeholder="Service Required" name="services"class="form-control">
+                                    <label></label>
+                                </fieldset>
+                                <div class="col-sm-12 col-md-12">
+                                    <textarea placeholder="Message" name="message" class="form-control"></textarea>
+                                    <input type="submit" value="Send Message" id="get_consult" class="button yellow">
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="messages">For consultation via phone, please call  (001) 234 - 5678</div>
+                            </form>
+                        </div>
+                    </div>--%>
+                    <!--End Consultation -->
+
+                    <!--Start Why Choose -->
+                   <%-- <div class="col-sm-6 col-md-6">
+                        <div class="why_us  animated entrance">
+                            <h5 class="heading_a">legal eagle</h5>
+                            <h4 class="heading_b">Why Choose Us</h4>
+
+                            <div id="accordion">
+                                <h3>best LEGAL REPRESENTATIVES</h3>
+                                <div>
+                                    <p>
+                                        Amco laboris nisi aliquip xeaz duoa commodo consequt duis aut irure dolor
+                                        reprehenderit voluptate velit esse cillum dolore fugiat ipsum dolor sit amet
+                                        consectetur adipisicing elit sed eiusmod. Lorem ipsum dolor sit amet consec
+                                        tur adipisicing elit sed do eiusmod tempor incididunt.
+
+                                    </p>
+                                </div>
+                                <h3>highest winning ratio firm</h3>
+                                <div>
+                                    <p>
+                                        Amco laboris nisi aliquip xeaz duoa commodo consequt duis aut irure dolor
+                                        reprehenderit voluptate velit esse cillum dolore fugiat ipsum dolor sit amet
+                                        consectetur adipisicing elit sed eiusmod. Lorem ipsum dolor sit amet consec
+                                        tur adipisicing elit sed do eiusmod tempor incididunt.
+
+                                    </p>
+                                </div>
+                                <h3>confidential communications</h3>
+                                <div>
+                                    <p>
+                                        Amco laboris nisi aliquip xeaz duoa commodo consequt duis aut irure dolor
+                                        reprehenderit voluptate velit esse cillum dolore fugiat ipsum dolor sit amet
+                                        consectetur adipisicing elit sed eiusmod. Lorem ipsum dolor sit amet consec
+                                        tur adipisicing elit sed do eiusmod tempor incididunt.
+
+                                    </p>
+                                </div>
+                                <h3>award winning law firm</h3>
+                                <div>
+                                    <p>
+                                        Amco laboris nisi aliquip xeaz duoa commodo consequt duis aut irure dolor
+                                        reprehenderit voluptate velit esse cillum dolore fugiat ipsum dolor sit amet
+                                        consectetur adipisicing elit sed eiusmod. Lorem ipsum dolor sit amet consec
+                                        tur adipisicing elit sed do eiusmod tempor incididunt.
+
+                                    </p>
+                                </div>
+
+                                <h3>our attorneys hold degrees</h3>
+                                <div>
+                                    <p>
+                                        Amco laboris nisi aliquip xeaz duoa commodo consequt duis aut irure dolor
+                                        reprehenderit voluptate velit esse cillum dolore fugiat ipsum dolor sit amet
+                                        consectetur adipisicing elit sed eiusmod. Lorem ipsum dolor sit amet consec
+                                        tur adipisicing elit sed do eiusmod tempor incididunt.
+
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--End Why Choose -->
+                </div>
+            </div>
+        </div>--%>
+
+
+        <!--Start Skills -->
+        <div class="statistics bg1 seaction_margin">
+            <div class="statistics_inner  animated hatch">
+                <div class="container">
+                    <div class="row">
+                        <h5 class="heading_d">Every client & case is different</h5>
+                        <ul class="clearfix">
+                            <li id="counter1" class="col-sm-3 col-md-3">
+                                <div>
+                                    <a href="#">1345</a>
+                                    <small>Legal Cases</small>
+                                </div>
+                            </li>
+                            <li id="counter2" class="col-sm-3 col-md-3">
+                                <div>
+                                    <a href="#">345</a>
+                                    <small>qualified lawyers</small>
+                                </div>
+                            </li>
+                            <li id="counter3" class="col-sm-3 col-md-3">
+                                <div>
+                                    <a href="#">345</a>
+                                    <small>Awards Won</small>
+                                </div>
+                            </li>
+                            <li id="counter4" class="col-sm-3 col-md-3">
+                                <div>
+                                    <a href="#">345</a>
+                                    <small>trusted clients</small>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Skills -->
+
+
+        <!--Start Attornets -->
+       <%-- <div class="attornets_wrap seaction_margin">
+            <div class="container">
+                <div class="row">
+
+                    <div class="heading_section  animated slide">
+                        <h5 class="heading_c">legal eagle</h5>
+                        <h3 class="heading_b">our attornets</h3>
+                        <p>Dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt labore</p>
+                    </div>
+
+
+                    <div class="col-sm-3 col-md-3  animated slide">
+                        <div class="attorney">
+                            <figure>
+                                <a href="#"><img src="{% static 'indextemp/images/team.png' %}" alt=""></a>
+                            </figure>
+                            <div class="content">
+                                <h5><a href="#">paul scott</a></h5>
+                                <span>firm ceo</span>
+                            </div>
+                            <div class="social_icon">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-md-3  animated slide">
+                        <div class="attorney">
+                            <figure>
+                                <a href="#"><img src="{% static 'indextemp/images/team.png' %}" alt=""></a>
+                            </figure>
+                            <div class="content">
+                                <h5><a href="#">paul scott</a></h5>
+                                <span>firm ceo</span>
+                            </div>
+                            <div class="social_icon">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-md-3  animated slide">
+                        <div class="attorney">
+                            <figure>
+                                <a href="#"><img src="{% static 'indextemp/images/team.png' %}" alt=""></a>
+                            </figure>
+                            <div class="content">
+                                <h5><a href="#">paul scott</a></h5>
+                                <span>firm ceo</span>
+                            </div>
+                            <div class="social_icon">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-md-3  animated slide">
+                        <div class="attorney">
+                            <figure>
+                                <a href="#"><img src="{% static 'indextemp/images/team.png' %}" alt=""></a>
+                            </figure>
+                            <div class="content">
+                                <h5><a href="#">paul scott</a></h5>
+                                <span>firm ceo</span>
+                            </div>
+                            <div class="social_icon">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Attornets -->--%>
+
+
+        <!--Start Testimonials -->
+        <div class="testimonials_wrap bg2 seaction_margin  animated slide">
+            <div class="testimonials_inner">
+                <div class="container">
+                    <div class="row">
+
+                        <h5 class="heading_d">What clients says</h5>
+
+                        <div class="col-sm-12 col-md-12">
+                            <div class="testi_slider">
+
+                                <div class="slide">
+                                    <div class="col-sm-6 col-md-6">
+                                        <p>Best Website Ever
+                                        </p>
+                                        <span>john deo - client</span>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-6">
+                                        <p>Best Website Ever
+                                        </p>
+                                        <span>john deo - client</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="slide">
+                                    <div class="col-sm-6 col-md-6">
+                                        <p>Best Website Ever.
+                                        </p>
+                                        <span>john deo - client</span>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-6">
+                                        <p>Best Website Ever
+                                        </p>
+                                        <span>john deo - client</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="slide">
+                                    <div class="col-sm-6 col-md-6">
+                                        <p>Best Website Ever
+                                        </p>
+                                        <span>john deo - client</span>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-6">
+                                        <p>Best Website Ever
+                                        </p>
+                                        <span>john deo - client</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="pagers"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Testimonials -->
+
+
+        <!--Start News -->
+        <%--<div class="news_wrap seaction_margin">
+            <div class="container">
+
+                <div class="heading_section  animated fade">
+                    <h5 class="heading_c">legal eagle</h5>
+                    <h3 class="heading_b">the legal news</h3>
+                    <p>Dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt labore</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4 col-sm4  animated slide">
+                        <div class="news">
+                            <figure>
+                                <a href="#"><img src="{% static 'indextemp/images/news_img.png' %}" alt=""></a>
+                                <span class="date">25 <cite>April</cite></span>
+                            </figure>
+                            <div class="content">
+                                <h3><a href="#">how to win legal cases</a></h3>
+                                <h5>clients, case-study</h5>
+                                <p>Adipisicing elit sed do eiusmod tempor incid dunt
+                                    labore et dolore mag aliqua veniam quis nostruds
+                                    exercitation ullamco ipsum
+                                </p>
+                                <a href="#">read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-sm4 animated slide">
+                        <div class="news">
+                            <figure>
+                                <a href="#"><img src="{% static 'indextemp/images/news_img.png' %}" alt=""></a>
+                                <span class="date">25 <cite>April</cite></span>
+                            </figure>
+                            <div class="content">
+                                <h3><a href="#">how to win legal cases</a></h3>
+                                <h5>clients, case-study</h5>
+                                <p>Adipisicing elit sed do eiusmod tempor incid dunt
+                                    labore et dolore mag aliqua veniam quis nostruds
+                                    exercitation ullamco ipsum
+                                </p>
+                                <a href="#">read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-sm4 animated slide">
+                        <div class="news">
+                            <figure>
+                                <a href="#"><img src="{% static 'indextemp/images/news_img.png' %}" alt=""></a>
+                                <span class="date">25 <cite>April</cite></span>
+                            </figure>
+                            <div class="content">
+                                <h3><a href="#">how to win legal cases</a></h3>
+                                <h5>clients, case-study</h5>
+                                <p>Adipisicing elit sed do eiusmod tempor incid dunt
+                                    labore et dolore mag aliqua veniam quis nostruds
+                                    exercitation ullamco ipsum
+                                </p>
+                                <a href="#">read more...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>--%>
+        <!--End News -->
+
+
+        <!--Start partners-->
+        <div class="partners_wrap seaction_margin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-md-3 animated slide"><a href="#"><img src="{% static 'indextemp/images/icon1.png' %}" alt=""></a></div>
+                    <div class="col-sm-3 col-md-3 animated slide"><a href="#"><img src="{% static 'indextemp/images/icon2.png' %}" alt=""></a></div>
+                    <div class="col-sm-3 col-md-3 animated slide"><a href="#"><img src="{% static 'indextemp/images/icon3.png' %}" alt=""></a></div>
+                    <div class="col-sm-3 col-md-3 animated slide"><a href="#"><img src="{% static 'indextemp/images/icon4.png' %}" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <!--End Partners -->
+
+
+        <!--Start Call to Action -->
+        <div class="call_action  animated fade">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 col-md-9">
+                        <h4>We are an intellectual property law service.</h4>
+                        <p><%--Eiusmod tempor incid dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostru exercitation ullamco--%>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-md-3 text-right">
+                        <%--<a href="#" class="button bordered">hire the attorney</a>--%>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Call to Action -->
+
+
+
+
+        <!--Start Footer -->
+        <div class="footer_bottom">
+            <div class="footer_inner">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-3 col-md-3 animated slide">
+
+                            <div class="footer_widget">
+                                <a href="#"><img src="{% static 'indextemp/images/white_logo.png' %}" alt=""></a>
+                                <p>Adipisicing elit sed do eiusmod tempor incidunt
+                                    labore et dolore magna aliqua enim minim ven
+                                    quis nostu exercitation ullamco.
+                                </p>
+                                <%--<div class="news_letter">
+                                    <form method="post" action="http://shmai.com/preview/legaleagle-html/process.php" id="footer_mail">
+                                        <input type="email" placeholder="Newsletter Sign up" name="subcribe_email">
+                                        <input type="submit" id="send" value="">
+                                    </form>
+                                </div>                            --%>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 col-md-3 animated slide">
+
+                            <div class="footer_widget">
+                                <h5>What We Provide</h5>
+                                <ul class="creative-list">
+                                    <li><a href="#">Personal Injury</a></li>
+                                    <li><a href="#">Vehicle Accidental Law</a></li>
+                                    <li><a href="#">Intellectual Property</a></li>
+                                    <li><a href="#">Merger & Acquisition</a></li>
+                                    <li><a href="#">Real Estate Laws</a></li>
+                                    <li><a href="#">Industrial Cases</a></li>
+                                    <li><a href="#">Patent Laws</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-3 col-md-3 animated slide">
+
+                            <div class="footer_widget">
+                                <h5>Working Hours</h5>
+                                <address>
+                                    <p><span>Mon-Thu:</span></p>
+                                    <p>9:00 - 21:00</p>
+                                    <p><span>Fri:</span> 10:00 - 18:00</p>
+                                    <p><span>Sat:</span> 10:00 - 15:00</p>
+                                </address>
+
+                                <address>
+                                    <p><span>Holidays:</span></p>
+                                    <p>All Govt. Holidays &</p>
+                                    <p>Sundays</p>
+                                </address>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 col-md-3 animated slide">
+
+                            <div class="footer_widget">
+                                <h5>Contact Us</h5>
+
+                                <address>
+                                    <p class="hed">Paris Office</p>
+                                    <p>10, Faisal Avenue, Top Hill,</p>
+                                    <p>Tel: (051) 123-007</p>
+                                    <p> E-mail: hello@le-eagle.com</p>
+                                </address>
+
+                                <address>
+                                    <p class="hed">10, Faisal Avenue, Top Hill,</p>
+                                    <p>Tel: (051) 123-007</p>
+                                    <p>E-mail: hello@le-eagle.com</p>
+                                </address>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="footer_nav row animated slide">
+                        <div class="col-sm-9 col-md-9">
+                            <nav class="text-left">
+                                <ul>
+                                    <li><a href="#">home</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#">practise areas</a></li>
+                                    <li><a href="#">attorneys</a></li>
+                                    <li><a href="#">news</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <%--<a href="#" class="button yellow"> <img src="{% static 'indextemp/images/button_bg.png' %}" alt=""> get a free consultation</a>--%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container animated slide">
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                       <%-- <p>© 2018 Legal Eagle. All Rights Reserved | <a href="#">Privacy Policy</a></p>--%>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-right">
+                        <div class="social_icon">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#0" class="cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+        <!--End Footer -->
+
+
+        <script  src="{% static 'indextemp/js/jquery-1.11.3.js' %}"></script>
+
+        <!-- Bootstrap -->
+        <script  src="{% static 'indextemp/js/bootstrap.min.js' %}"></script>
+
+        <!-- Accordion -->
+        <script  src="{% static 'indextemp/js/jquery-ui.js' %}"></script>
+
+        <!-- Parallax -->
+        <script  src="{% static 'indextemp/js/jquery.parallax-1.1.3.js' %}"></script>
+
+        <!-- Slider -->
+        <script  src="{% static 'indextemp/js/jquery.cycle.all.js' %}"></script>
+
+        <!-- Timeline -->
+        <script  src="{% static 'indextemp/js/modernizr.js' %}"></script>
+        <script  src="{% static 'indextemp/js/jquery.mobile.custom.min.js' %}"></script>
+        <script  src="{% static 'indextemp/js/main.js' %}"></script>
+
+        <!-- Appear -->
+        <script  src="{% static 'indextemp/js/jquery.appear.js' %}"></script>
+
+        <!-- Slider -->
+        <script  src="{% static 'indextemp/js/owl.carousel.js' %}"></script>
+
+        <!-- Custom -->
+        <script  src="{% static 'indextemp/js/custom.js' %}"></script>
+    <form id="form1" runat="server">
+    <div>
+        <:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        </:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

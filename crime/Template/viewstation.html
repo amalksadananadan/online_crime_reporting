@@ -1,0 +1,71 @@
+
+{% extends 'adminhome.html' %}
+{% block content %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+
+</head>
+<body>
+
+<div>
+
+
+    <table border="1">
+        <tr>
+        <th>Id</th>
+        <th>Station Name</th>
+        <th>Station Code</th>
+        <th>Emergency number</th>
+        <th>Contact number</th>
+
+
+
+
+        <th></th>
+            <th></th>
+
+        </tr>
+
+        {% for i in key %}
+        <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.sname}}</td>
+        <td>{{i.scode}}</td>
+            <td>{{i.enum}}</td>
+            <td>{{i.cnum}}</td>
+
+
+            <td><a href="{% url 'stationedit' id=i.id %} " style="color:blue" name="edit">Edit </a> </td>
+            <td><a href="{% url 'stationdelete' id=i.id %} " style="color:blue" name="delete">Delete </a> </td>
+
+
+        </tr>
+        {% endfor %}
+
+
+
+    </table>
+</div>
+<br/><br/>
+
+
+</body>
+</html>
+{% endblock %}

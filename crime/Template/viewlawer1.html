@@ -1,0 +1,61 @@
+
+{% extends 'adminhome.html' %}
+{% block content %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+
+</head>
+<body>
+
+<div>
+
+
+</div>
+<br/><br/>
+<div>
+    <table border="2">
+        <tr>
+            <th>Photo</th>
+            <th>Qualification</th>
+            <th>Experience</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+
+        <tr>
+            <td><img src="/media/{{key.photo}}" height="250" width="250"></td>
+            <td><img src="/media/{{key.qual}}" height="250" width="250"></td>
+            <td><img src="/media/{{key.proof}}" height="250" width="250"></td>
+            <td><a href="{% url 'approvelawer' id=key.id %}" style="color:blue">Approve</a> </td><br>
+            <td><a href="{% url 'rejectlawer' id=key.id %}" style="color:blue">Reject</a> </td>
+        </tr>
+
+
+    </table>
+</div>
+
+
+
+
+
+</body>
+</html>
+{% endblock %}

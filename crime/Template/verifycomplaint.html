@@ -1,0 +1,42 @@
+{% extends 'adminhome.html' %}
+{% block content %}
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Id</th><th>Case Type</th><th>Complaint</th><th>Station Name</th><th>Station Code</th><th>Citizen Name</th><th></th>
+    </tr>
+    {% for i in key %}
+
+    <tr>
+        <td>{{i.id}}</td><td>{{i.ctype}}</td><td>{{i.complaint}}</td><td>{{i.sname}}</td><td>{{i.scode}}</td><td>{{i.name}}</td>
+
+<td><a href="{% url 'viewdetails' id=i.id %} ">View Details</a> </td>
+
+
+
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

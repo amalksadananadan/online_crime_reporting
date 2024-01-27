@@ -1,0 +1,8 @@
+https://www.twilio.com/blog/2018/05/build-chat-python-django-applications-programmable-chat.html
+
+
+rating
+
+
+
+https://pydigger.com/pypi/django-star-ratings

@@ -1,0 +1,73 @@
+{% extends 'citizenhome.html' %}
+{% block content %}
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+                	    <script type="text/javascript" src="{% static 'validation.js' %}"></script>
+
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+<h3 class="w3l-titles">Theft Case</h3>
+<form action="{% url 'theft' %}" method="post" enctype="multipart/form-data" name="f2">
+    {% csrf_token %}
+    <table  align="center">
+
+        <tr>
+            <th>THEFT OBJECT DETAILS</th>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td><input type="date" name="date" required/><br></td>
+
+        <tr>
+            <td>Object</td>
+            <td><input type="text" name="object" required onchange="return fn_allLetter(document.f2.object);"/><br></td>
+        </tr>
+        <tr>
+            <td>Model</td>
+            <td><input type="text" name="model" required onchange="return fn_allLetter(document.f2.model);"/><br></td>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td><input type="text" name="quantity" required onchange="return fn_checknumber(document.f2.quantity);"/><br></td>
+        </tr>
+        <tr>
+            <td>Identification</td>
+            <td><input type="text" name="identification" required onchange="return fn_allLetter(document.f2.identification);"/><br></td>
+        </tr>
+        <tr><br><br>
+            <td>Remarks</td>
+            <td><textarea name="remarks" placeholder="Remarks" required=""></textarea><br><br></td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><input type="file" name="photo" required/><br></td>
+        </tr>
+
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add"> </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
+{% endblock %}

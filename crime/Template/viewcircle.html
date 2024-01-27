@@ -1,0 +1,62 @@
+
+{% extends 'adminhome.html' %}
+{% block content %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+
+</head>
+<body>
+
+<div>
+
+
+    <table border="1">
+        <tr>
+        <th>Id</th>
+        <th>Circle</th>
+
+
+        <th></th>
+            <th></th>
+
+        </tr>
+
+        {% for i in key %}
+        <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.circlename}}</td>
+
+            <td><a href="{% url 'circleedit' id=i.id %} " style="color:blue" name="edit">Edit </a> </td>
+            <td><a href="{% url 'circledelete' id=i.id %} " style="color:blue" name="delete">Delete </a> </td>
+
+
+        </tr>
+        {% endfor %}
+
+
+
+    </table>
+</div>
+<br/><br/>
+
+
+</body>
+</html>
+{% endblock %}

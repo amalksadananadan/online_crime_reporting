@@ -1,0 +1,239 @@
+<!--author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+<html>
+<head>
+<title>Crime Investigator</title>
+<!-- metatags-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Sports Club Membership Registration form a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<link href="{% static 'regtemp/css/style.css' %}" rel="stylesheet" type="text/css" media="all"/><!--style_sheet-->
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
+<!--online_fonts-->
+<link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet"><!--online_fonts-->
+	<script>
+
+	</script>
+	                	    <script type="text/javascript" src="{% static 'validation.js' %}"></script>
+
+</head>
+<body>
+<form method="post" action="{% url 'citizenreg' %}" enctype="multipart/form-data" name="form1">
+    {% csrf_token %}
+<h1><span>C</span>rime <span>I</span>nvestigator</a></h1>
+<div class="w3ls-main">
+<h2>Citizen Registration Form</h2>
+<p></p>
+<div class="w3ls-form">
+<ul class="fields">
+<div class="Refer_w3l">
+<h3>Your details</h3>
+	<li>
+		<label class="w3ls-opt">name :<span class="w3ls-star"> * </span></label>
+		<div class="w3ls-name">
+			<input type="text" name="name"  placeholder="first name" required onchange="return fn_allLetter(document.form1.name);"/>
+		</div>
+	</li>
+
+	<li>
+		<div class="mail">
+			<label class="w3ls-opt">e-mail :<span class="w3ls-star"> * </span></label>
+			<span class="w3ls-text w3ls-name">
+				<input type="email" name="email" placeholder="enter your e-mail" required="" onchange="return fn_checkemail(document.form1.email);"/>
+			</span>
+		</div>
+	</li>
+	<li>
+		<label class="w3ls-opt">phone number :<span class="w3ls-star"> * </span></label>
+			<span class="w3ls-text w3ls-name">
+				<input type="text" name="phone" placeholder="phone number" required="" onchange="return fn_checkmobile(document.form1.phone);"/>
+			</span>
+	</li>
+	<li>
+		<label class="w3ls-opt">Address: <span class="w3ls-star" > * </span> </label>
+		<div class="adderss">
+			<span class="text">
+				<input type="text" name="hname" placeholder="house name" required=" " onchange="return fn_allLetter(document.form1.hname);">
+			</span>
+			<span class="text">
+				<input type="text" name="street" placeholder="street line2" required=" " onchange="return fn_allLetter(document.form1.street);">
+			</span>
+			<span class="text">
+				<input type="text" name="city" placeholder="city" required="" onchange="return fn_allLetter(document.form1.city);">
+
+			</span>
+			<span class="text">
+				<input type="text" name="state" placeholder="state/province" required="" onchange="return fn_allLetter(document.form1.state);">
+
+			</span>
+			<span class="text">
+				<input type="text" name="pin" placeholder="postal/zipcode" required="" onchange="return fn_checkpin(document.form1.pin);">
+			</span>
+			<span class="text">
+				<input type="text" name="country" placeholder="country" required="" onchange="return fn_allLetter(document.form1.country);">
+			</span>
+			</div>
+	</li>
+	<li>
+		<div class="uname">
+			<label class="w3ls-opt">username :<span class="w3ls-star"> * </span></label>
+			<span class="w3ls-text w3ls-name">
+				<input type="text" name="uname" placeholder="enter username" required=""/>
+			</span>
+		</div>
+	</li>
+	<li>
+		<div class="pwd">
+			<label class="w3ls-opt">password :<span class="w3ls-star"> * </span></label>
+			<span class="w3ls-text w3ls-name">
+				<input type="password" name="pwd" placeholder="enter your password" required=""/>
+			</span>
+		</div>
+	</li>
+
+
+	<!--</div>
+	</li>
+	<li>
+							<label class="w3ls-opt">Birth Date :<span class="w3ls-star"> * </span></label>
+							<div class="w3ls-text w3ls-name">
+								<span class="agile_sub-label">
+									<select name="day" class="day">
+										<option>Day</option>
+										<option value="1"> 1 </option>
+										<option value="2"> 2 </option>
+										<option value="3"> 3 </option>
+										<option value="4"> 4 </option>
+										<option value="5"> 5 </option>
+										<option value="6"> 6 </option>
+										<option value="7"> 7 </option>
+										<option value="8"> 8 </option>
+										<option value="9"> 9 </option>
+										<option value="10"> 10 </option>
+										<option value="11"> 11 </option>
+										<option value="12"> 12 </option>
+										<option value="13"> 13 </option>
+										<option value="14"> 14 </option>
+										<option value="15"> 15 </option>
+										<option value="16"> 16 </option>
+										<option value="17"> 17 </option>
+										<option value="18"> 18 </option>
+										<option value="19"> 19 </option>
+										<option value="20"> 20 </option>
+										<option value="21"> 21 </option>
+										<option value="22"> 22 </option>
+										<option value="23"> 23 </option>
+										<option value="24"> 24 </option>
+										<option value="25"> 25 </option>
+										<option value="26"> 26 </option>
+										<option value="27"> 27 </option>
+										<option value="28"> 28 </option>
+										<option value="29"> 29 </option>
+										<option value="30"> 30 </option>
+										<option value="31"> 31 </option>
+									</select>
+
+								</span>
+								<span class="agile_sub-label xxx">
+									<select name="month" class="month">
+										<option>Month</option>
+										<option value="January"> January </option>
+										<option value="February"> February </option>
+										<option value="March"> March </option>
+										<option value="April"> April </option>
+										<option value="May"> May </option>
+										<option value="June"> June </option>
+										<option value="July"> July </option>
+										<option value="August"> August </option>
+										<option value="September"> September </option>
+										<option value="October"> October </option>
+										<option value="November"> November </option>
+										<option value="December"> December </option>
+									 </select>
+
+								</span>
+								<span class="agile_sub-label">
+									<input type="text" class="year" name="year" placeholder=" Enter Year" required="">
+
+								</span>
+								<div class="clear"></div>
+							</div>
+						</li>-->
+	<!--<div>
+						<div class="wthree-text">
+						<h4>Upload </h4>
+<table>
+	<tr>
+		<td><label class="w3ls-opt">Photo<span class="w3ls-star"></span></label></td>
+		<td><span class="text">
+								<input type="file" name="photo" placeholder="Photo" required="">
+								</span></td>
+	</tr>
+	<tr>
+		<td><label class="w3ls-opt">Qualification<span class="w3ls-star"></span></label></td><td><span class="text">
+
+								<input type="file" name="qual" placeholder="qualification" required="">
+		</span></td>
+	</tr>
+	<tr>
+		<td><label class="w3ls-opt">Identity Proof<span class="w3ls-star"></span></label></td><td><span class="text">
+								<input type="file" name="proof" placeholder="Identity Proof" required="">
+								</span></td>
+	</tr>
+</table>
+
+
+
+
+
+</div>-->
+							<!--<li>
+								<input type="radio" id="b-option" name="selector1">
+								<label for="b-option">Play For Hockey</label>
+								<div class="check">
+									<div class="inside"></div>
+								</div>
+							</li>
+							<li>
+								<input type="radio" id="a-option" name="selector1">
+								<label for="a-option">Play For Tennis</label>
+								<div class="check"></div>
+							</li>
+							<li>
+								<input type="radio" id="b-option" name="selector1">
+								<label for="b-option">Play For Shuttle</label>
+								<div class="check">
+									<div class="inside"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>-->
+	</div>
+	<div class="Refer_w3l">
+	<!--<h3>Membership Rules</h3>
+
+	<p>1. Praesent urna odio, rutrum sed malesuada nec, pulvinar sed metus</p>
+
+	<p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non dolor et nulla tristique commodo nec eget nibh. </p>
+
+	</div>
+	<p>Praesent urna odio, rutrum sed malesuada nec, pulvinar sed metus.</p>-->
+
+<div class="clear"></div>
+	<div class="w3ls-btn">
+		<input type="submit" value="REGISTER">&nbsp;&nbsp;&nbsp;&nbsp;<a href="{% url 'index' %}">Home</a>
+	</div>
+</form>
+</div>
+</div>
+<footer>&copy; 2019 Crime Investigator Citizen Registration. All Rights Reserved | Design by <a></a></footer>
+</body>
+</html>

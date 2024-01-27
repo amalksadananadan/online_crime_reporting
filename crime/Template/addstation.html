@@ -1,0 +1,72 @@
+{% extends 'adminhome.html' %}
+{% block content %}
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+                	    <script type="text/javascript" src="{% static 'validation.js' %}"></script>
+
+
+</head>
+<body>
+<form action="{% url 'station' %}" method="post" name="f4">
+    {% csrf_token %}
+    <table  align="center">
+
+
+        <tr>
+            <td>select Circle</td>
+            <td><select name="cname"><option value="0">--select--</option>
+                {% for i in key %}
+                <option value="{{i.id}}">{{i.circlename}}</option>
+        {% endfor %}
+        </tr>
+        <tr>
+            <td>Station Name</td>
+            <td><input type="text" name="sname" required onchange="return fn_allLetter(document.f4.sname);"/><br></td>
+        </tr>
+        <tr>
+            <td>Station Code</td>
+            <td><input type="text" name="scode" required onchange="return fn_checknumber(document.f4.scode);"/><br></td>
+        </tr>
+        <tr>
+            <td>Emergency Number</td>
+            <td><input type="text" name="enum" required onchange="return fn_checknumber(document.f4.enum);"/><br></td>
+        </tr>
+        <tr>
+            <td>Contact Number</td>
+            <td><input type="text" name="cnum" required onchange="return fn_checknumber(document.f4.cnum);"/><br></td>
+        </tr>
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" name="uname" required onchange="return a5()"/><br></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="pwd" required/><br></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add" ></td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
+{% endblock %}

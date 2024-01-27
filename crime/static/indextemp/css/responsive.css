@@ -1,0 +1,695 @@
+/****************************************************************************
+(800 X 600) + (768 X 1024)
+****************************************************************************/
+@media only screen and (min-width: 1051px) and (max-width: 1200px)
+{
+    #tabs ul li a {  padding: 10px 10px;  }
+    .skill_img .heading_section .heading_b {margin-bottom: 15px;  font-size: 14px;  line-height: 22px;  }
+    .tp-caption.title-small { margin-left: 30px !important;  font-size: 9px !important; }
+    .tp-caption.title-bold { margin-left: 38px !important; }
+    .tp-caption.title-small:before { display: none; }
+    .tp-caption.title-small:after { display: none; }
+
+    .tp-caption .button { margin-top: 10px;  }
+    header .button {
+        padding: 14px 11px;
+        font-size: 9px;
+    }
+    .footer_nav .button {  padding: 18px 14px;  font-size: 10px;  }
+}
+
+/****************************************************************************
+    (800 X 600) + (768 X 1024)
+****************************************************************************/
+@media only screen and (min-width: 801px) and (max-width: 1050px)
+{
+
+    .tp-caption.title-small { margin-left: 30px !important;  font-size: 9px !important; }
+    .tp-caption.title-bold { margin-left: 38px !important; }
+    .tp-caption.title-small:before { display: none; }
+    .tp-caption.title-small:after { display: none; }
+
+    .tp-caption .button { margin-top: 10px;  }
+    .tp-caption .button.last{margin-left: 50px;}
+
+
+    nav ul li a {  font-size: 8px;  }
+    nav ul li {  display: inline-block;  margin-left: 9px;  }
+    #header2 .button {  margin-top: 37px;  }
+    header .button {  padding: 12px 5px;  font-size: 7px;  }
+
+    .info > img {  margin-right: 9px;  margin-bottom: 15px;  }
+    .skill_content .heading_b {  font-size: 13px;  margin-bottom: 10px;  }
+
+    .consult_area ul li i {  width: 40px;  height: 40px;line-height: 40px;  font-size: 18px;  }
+    .heading_b {  font-size: 16px;  line-height: 24px;  }
+
+    .call_action h4 {  font-size: 18px;  }
+    .call_action .button { padding: 14px 30px;font-size: 8px;  }
+    .footer_widget ul li a {font-size: 11px;}
+    .footer_widget ul li a {font-size: 11px;}
+    .footer_nav .button {  font-size: 7px;  padding: 10px 10px;  }
+    .social_icon a {
+        margin: 0px 5px;
+    }
+    footer .social_icon a {margin: 0px 0px 0px 25px;  }
+
+    .attorney_detail .social_icon a {width: 25px;  height: 25px;  line-height: 25px;}
+
+    .box ul li span {  float: none;  display: block;  }
+    .box h5 {font-size: 10px;  min-height: 75px;  }
+
+    .services_two {
+        background: none;
+        padding: 0px;
+    }
+    .skill_content { padding: 48px 20px 0;  }
+    .skill_img img {  width: 100%;  }
+    .skill_content br {  display: none;  }
+    .skill_content .heading_b {  font-size: 13px;  margin-bottom: 10px;  }
+
+    #tabs ul li a {padding: 11px 9px; display: block;  }
+    .skill_counter { padding-top: 31px;  padding-left: 10px;  }
+    .skill_counter ul li {margin-bottom: 10px;  }
+    .skill_counter ul li a {font-size: 23px;}
+    .skill_counter ul li small {  font-size:8px;}
+    .user_img img {
+        width: 100%;
+        margin-top: 142px;
+    }
+
+    .cd-horizontal-timeline .events {width:370px !important;;}
+
+    .cd-horizontal-timeline .events ol li:nth-child(2) a {left:65px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(3) a {left:130px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(4) a {left:195px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(5) a {left:260px !important;}
+    .cd-horizontal-timeline .events ol li:last-child a {left:325px !important;}
+    .recent_post li img {
+        width: 120%;
+    }
+    .skill_img .heading_section {padding: 15px;  }
+    .skill_img .heading_section .heading_b {  color: #fff;  margin-bottom: 10px;  font-size: 10px;  line-height: 18px;  }
+    .skill_img .heading_section p {  color: #cccccc;  margin-bottom: 10px;  font-size: 10px;  line-height: 15px;  }
+
+
+    .slide_content {  padding-top: 128px;}
+    .slide_content h3 {  font-size: 10px;  }
+    .slide_content h1 {  font-size: 17px;  line-height: 21px;  margin: 11px 9px;  }
+    .main_slider .owl-prev{display:none;}
+    .main_slider .owl-next{display:none;}
+}
+
+
+/****************************************************************************
+(768)
+****************************************************************************/
+@media only screen and (min-width: 768px) and (max-width: 800px)
+{
+    #header2 .button {  margin-top: 37px;  }
+    header .button {  padding: 12px 5px;  font-size: 7px;  }
+    .call_action h4 {  font-size: 18px;  }
+    .call_action .button { padding: 14px 30px;font-size: 8px;  }
+    .footer_widget ul li a {font-size: 11px;}
+    .footer_widget ul li a {font-size: 11px;}
+    .footer_nav .button {  font-size: 7px;  padding: 10px 10px;  }
+    footer .social_icon a {margin: 0px 0px 0px 25px;  }
+    .tp-caption.title-small { margin-left: 30px !important;  font-size: 9px !important; }
+    .tp-caption.title-bold { margin-left: 38px !important; }
+    .tp-caption.title-small:before { display: none; }
+    .tp-caption.title-small:after { display: none; }
+
+    .tp-caption .button {font-size: 8px; margin-top: 10px;  }
+    .tp-caption .button.last{margin-left: 60px;}
+
+    nav ul li a {  font-size: 8px;  }
+    nav ul li {  display: inline-block;  margin-left: 9px;  }
+    .info > img {  margin-right: 9px;  margin-bottom: 15px;  }
+    .skill_content { padding: 48px 20px 0;  }
+    .skill_img img {  width: 100%;  }
+    .skill_content br {  display: none;  }
+    .skill_content .heading_b {  font-size: 13px;  margin-bottom: 10px;  }
+
+    .consult_area ul li i {  width: 40px;  height: 40px;line-height: 40px;  font-size: 18px;  }
+    .heading_b {  font-size: 16px;  line-height: 24px;  }
+
+    .box ul li span {  float: none;  display: block;  }
+    .box h5 {font-size: 10px;  min-height: 75px;  }
+    .seaction_margin {  margin-bottom: 45px;  }
+    .skill_counter { padding-top: 31px;  padding-left: 10px;  }
+    .skill_counter ul li {margin-bottom: 10px;  }
+    .skill_counter ul li a {font-size: 23px;}
+    .skill_counter ul li small {  font-size:8px;}
+    #tabs ul li a {padding: 11px 9px; display: block;  }
+
+    .skill_img .heading_section {padding: 15px;  }
+    .skill_img .heading_section .heading_b {  color: #fff;  margin-bottom: 10px;  font-size: 10px;  line-height: 18px;  }
+    .skill_img .heading_section p {  color: #cccccc;  margin-bottom: 10px;  font-size: 10px;  line-height: 15px;  }
+
+    .user_img img {
+        width: 100%;
+        margin-top: 142px;
+    }
+    .recent_post li img {
+        width: 142%;
+    }
+
+    .social_icon a {
+        margin: 0px 5px;
+    }
+    .attorney figure {
+        margin-bottom: -3px;
+    }
+    .attorney2 .attorney {min-height: 410px;  }
+    .attorney_detail .meta li {font-size: 8px;}
+    .attorney_detail .social_icon a {width: 25px;  height: 25px;  line-height: 25px;}
+
+    .cd-horizontal-timeline .events {width:370px !important;;}
+
+    .cd-horizontal-timeline .events ol li:nth-child(2) a {left:65px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(3) a {left:130px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(4) a {left:195px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(5) a {left:260px !important;}
+    .cd-horizontal-timeline .events ol li:last-child a {left:325px !important;}
+
+    .slide_content {  padding-top: 128px;}
+    .slide_content h3 {  font-size: 10px;  }
+    .slide_content h1 {  font-size: 17px;  line-height: 21px;  margin: 11px 9px;  }
+    .main_slider .owl-prev{display:none;}
+    .main_slider .owl-next{display:none;}
+
+
+    /*/================Responsive================/*/
+
+    .main-menu .navigation > li > a{padding: 20px;}
+    .main-slider h2{font-size: 36px;}
+    .request-section .form-outer{float: none !important; margin: 0 auto; padding-bottom: 0;}
+    .award-winning-section .award-block .img-box{margin-bottom: 30px;}
+    .get-solution .detail-box h3{margin-bottom: 10px;}
+    .get-solution .detail-box p{margin-bottom: 10px;}
+    .main-footer .timing{padding-left: 0;}
+    .main-footer .practice-area{padding-left: 0;}
+    .latest-news .news-block{margin-bottom: 30px;}
+    .team-section .team-box .team-text{padding: 20px 0;}
+    .welcome-img{text-align: left;}
+    .welcome-img:after{display: none;}
+    .fun-fact-testimonial-section .fun-fact-style-one:before{width: 100%; height: 400px;}
+    .fun-fact-testimonial-section .fun-fact-style-one{padding: 50px 20px 0;}
+    .sidebar-right{border-left: 0; padding-left: 0;}
+    .about-lawyers{padding-top: 100px;}
+
+}
+
+
+/****************************************************************************
+    (601 X 767)
+****************************************************************************/
+
+@media only screen and (min-width: 701px) and (max-width: 767px)
+{
+
+    #header1 {  text-align: center;  position: static;  background: #005689;  padding: 10px 0px; margin-bottom: 10px; }
+    header .logo img {  width: auto;  }
+
+    header nav {  display: none;  }
+    .responsive_button { display: block;}
+    .responsive_nav.navbar-collapse {  margin-bottom: 10px;  }
+
+    #header1 .button {margin-top: 10px;}
+    #header2 .button {margin-top: 10px;}
+    header form {display: none;}
+    header .button {  float: none;  }
+
+    #header2 {  line-height: normal;  height: auto;  padding: 10px;text-align: center;  }
+    .slider .caption h3 {  font-size: 23px;}
+
+
+    .tp-caption.title-small { margin-left: 30px !important;  font-size: 9px !important; }
+    .tp-caption.title-bold { margin-left: 38px !important; }
+    .tp-caption.title-small:before { display: none; }
+    .tp-caption.title-small:after { display: none; }
+
+    .tp-caption .button {font-size: 8px; margin-top: 10px;  }
+    .tp-caption .button.last{margin-left: 60px;}
+
+    .feature {  width: 33.33%;  float: left;  }
+    .attornets_wrap .col-sm-3.col-md-3 {  width: 25%;  float: left;  }
+    .attorney .content h5 a {font-size: 9px;  }
+    .attorney .content span {font-size: 9px;}
+    .social_icon a {  margin: 0px 2px;  }
+
+    .news_wrap .col-sm-4.col-sm4 {  width: 33.33%;  float: left;  }
+    .services_wrap .col-sm-4.col-md-4 {  float: left;  width: 33.33%;  }
+
+    .info {  overflow: hidden;margin-bottom: 30px;  }
+
+    .skill_content {  width: 100%;  float: none;  padding: 48px 20px 0;  }
+    .skill_img {  width: 90%;  float: none;  position: relative;  margin: 0 auto;  }
+    .skill_img img{width: 100%;}
+
+    .consultation {  margin-bottom: 40px;  }
+
+    .statistics {  height: auto; }
+    .statistics_inner {  padding-bottom: 59px;  }
+    .statistics ul li {  margin-bottom: 30px;  width: 22%;  display: inline-block;  }
+
+    .statistics .heading_d {font-size: 12px}
+    .statistics .heading_d:before {display: none;}
+    .statistics .heading_d:after {display: none;}
+    .statistics2 p {font-size: 32px;}
+    .attorney figure {margin-bottom: -3px;  }
+
+    .news {  margin-bottom: 30px;  }
+    .partners_wrap a {  display: block;  margin-bottom: 20px;  }
+
+    .call_action .text-right {  text-align: left;  margin-top: 15px;  }
+    .consultation form {width: 100%;}
+
+
+    .consult_area i {  margin-bottom: 20px;  }
+    .consult_area {  text-align: center;  }
+
+    .box {  margin-bottom: 30px;  }
+
+    .skill_counter { padding-top: 31px;  padding-left: 10px;  }
+    .skill_counter ul li {margin-bottom: 10px;  }
+    .skill_counter ul li a {font-size: 23px;}
+    .skill_counter ul li small {  font-size:8px;}
+    #tabs ul li a {padding: 11px 16px; display: block;  }
+
+    .cd-horizontal-timeline .timeline {max-width: 100%; margin: 0 auto;  }
+
+    .cd-horizontal-timeline .events ol li:nth-child(2) a {left:75px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(3) a {left:150px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(4) a {left:225px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(5) a {left:300px !important;}
+    .cd-horizontal-timeline .events ol li:last-child a {left:375px !important;}
+
+    .skill_img .heading_section {padding: 15px;  }
+    .skill_img .heading_section .heading_b {  color: #fff;  margin-bottom: 15px;  font-size: 22px;  line-height: 26px;  }
+    .skill_img .heading_section p {  color: #cccccc;  margin-bottom: 10px;  }
+
+    .attorney_detail .meta li {  margin-bottom: 11px;  }
+    .attorney_detail .social_icon {  text-align: left; }
+    .attorney2 .attorney {  margin-bottom: 80px;  min-height: 365px;  }
+
+    article.post a img {  margin-bottom: 20px;  }
+    .recent_post ul li .col-md-4 {  float: left;  }
+    .cate {  text-align: center;  line-height: 27px;  }
+    .single .social_icon {  text-align: center;  margin-top: 13px;  }
+    .similar_post .col-sm-4.col-sm4 {  width: 33.33%;  float: left;  }
+    .price_table {  margin-bottom: 30px;  }
+
+    .footer_widget {  margin-bottom: 35px;  }
+
+    .footer_nav nav li {  margin: 0px;  margin-right: 15px;  }
+    .footer_nav nav {  margin-bottom: 24px;  line-height: 30px;  }
+
+    footer {  background: #012b45;  height: auto;  padding: 30px 0;  line-height: normal;  text-align: center;  }
+    footer p {  color: #8d949a;  line-height: 26px;  margin-bottom: 20px;  }
+    footer  .social_icon {  text-align: center;  }
+
+
+    .slide_content {  padding-top: 85px;}
+    .slide_content h3 {  font-size: 10px;  }
+    .slide_content h1 {  font-size: 17px;  line-height: 21px;  margin: 11px 9px;  }
+    .main_slider .owl-prev{display:none;}
+    .main_slider .owl-next{display:none;}
+
+
+}
+/****************************************************************************
+    (480 X 600)
+****************************************************************************/
+
+@media only screen and (min-width: 481px) and (max-width: 700px)
+{
+
+    #header1 {  text-align: center;  position: static;  background: #005689;  padding: 10px 0px; margin-bottom: 10px; }
+    header .logo img {  width: auto;  }
+
+    header nav {  display: none;  }
+    .responsive_button { display: block;}
+    .responsive_nav.navbar-collapse { margin-bottom: 10px;  }
+
+    #header1 .button {margin-top: 10px;}
+    #header2 .button {margin-top: 10px;}
+    header form {display: none;}
+    header .button {  float: none;  }
+
+    #header2 {  line-height: normal;  height: auto;  padding: 10px;text-align: center;  }
+    .slider .caption h3 {  font-size: 23px;}
+
+
+    .tp-caption.title-small { margin-left: 30px !important;  font-size: 9px !important; }
+    .tp-caption.title-bold { margin-left: 38px !important; }
+    .tp-caption.title-small:before { display: none; }
+    .tp-caption.title-small:after { display: none; }
+
+    .tp-caption .button {font-size: 8px; margin-top: 10px;  }
+    .tp-caption .button.last{margin-left: 60px;}
+
+    .info {  overflow: hidden;margin-bottom: 30px;  }
+    .info > img {  float: none !important;  margin: 0px;  margin-bottom: 30px;  width: 100%;  }
+
+    .skill_content {  width: 100%;  float: none;  padding: 48px 20px 0;  }
+    .skill_img {  width: 90%;  float: none;  position: relative;  margin: 0 auto;  }
+    .skill_img img{width: 100%;}
+
+    .consultation {  margin-bottom: 40px;  }
+
+    .statistics {  height: auto; }
+    .statistics_inner {  padding-bottom: 59px;  }
+    .statistics ul li {  margin-bottom: 30px;  width: 49%;  display: inline-block;  }
+
+    .statistics .heading_d {font-size: 12px}
+    .statistics .heading_d:before {display: none;}
+    .statistics .heading_d:after {display: none;}
+    .statistics2 p {font-size: 32px;}
+    .attorney figure {margin-bottom: -3px;  }
+
+    .news {  margin-bottom: 30px;  }
+    .partners_wrap a {  display: block;  margin-bottom: 20px;  }
+
+    .call_action .text-right {  text-align: left;  margin-top: 15px;  }
+    .consultation form {width: 100%;}
+
+    .consult_area i {  margin-bottom: 20px;  }
+    .consult_area {  text-align: center;  }
+    .info_wrap {  text-align: center;  }
+
+    .box {  margin-bottom: 30px;  }
+
+    .skill_counter { padding-top: 31px;  padding-left: 10px;  }
+    .skill_counter ul li {margin-bottom: 10px;  }
+    .skill_counter ul li a {font-size: 23px;}
+    .skill_counter ul li small {  font-size:8px;}
+    #tabs ul li a {padding: 11px 16px; display: block;  }
+
+    .cd-horizontal-timeline .timeline {max-width: 100%; margin: 0 auto;  }
+
+    .cd-horizontal-timeline .events ol li:nth-child(2) a {left:75px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(3) a {left:150px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(4) a {left:225px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(5) a {left:300px !important;}
+    .cd-horizontal-timeline .events ol li:last-child a {left:375px !important;}
+
+    .skill_img .heading_section {padding: 15px;  }
+    .skill_img .heading_section .heading_b {  color: #fff;  margin-bottom: 10px;  font-size: 10px;  line-height: 18px;  }
+    .skill_img .heading_section p {  color: #cccccc;  margin-bottom: 10px;  font-size: 13px;  line-height: 21px;  }
+
+    .attorney_detail .meta li {  margin-bottom: 11px;  }
+    .attorney_detail .social_icon {  text-align: left; }
+
+    article.post a img {  margin-bottom: 20px;  }
+    .recent_post ul li .col-md-4 {  float: left;  }
+    .cate {  text-align: center;  line-height: 27px;  }
+    .single .social_icon {  text-align: center;  margin-top: 13px;  }
+
+    .price_table {  margin-bottom: 30px;  }
+
+    .footer_widget {  margin-bottom: 35px;  }
+
+    .footer_nav nav li {  margin: 0px;  margin-right: 15px;  }
+    .footer_nav nav {  margin-bottom: 24px;  line-height: 30px;  }
+
+    footer {  background: #012b45;  height: auto;  padding: 30px 0;  line-height: normal;  text-align: center;  }
+    footer p {  color: #8d949a;  line-height: 26px;  margin-bottom: 20px;  }
+    footer  .social_icon {  text-align: center;  }
+
+
+    .slide_content {  padding-top: 51px;}
+    .slide_content h3 {  font-size: 8px;  }
+    .slide_content h3:after {display: none}
+    .slide_content h3:before {display: none}
+    .slide_content h1 {  font-size: 11px;  line-height: 18px;  margin: 8px 0px;  }
+    .slide_content a.button {  margin-right: 10px;  font-size: 7px;  padding: 6px 10px;  }
+    .main_slider .owl-prev{display:none;}
+    .main_slider .owl-next{display:none;}
+
+
+}
+
+/****************************************************************************
+    (568)
+****************************************************************************/
+
+@media only screen and (max-width: 568px)
+{
+
+
+    /*/================Responsive================/*/
+
+    header .button {  float: none;  }
+    .main-menu .navigation > li > a{padding: 5px 10px;}
+    .main-menu .navigation{width: 300px;}
+    .main-menu .navigation > li{width: 100%;}
+    .main-menu .navigation > li > ul{width: 100%;}
+    .latest-news{padding: 60px 0 50px;}
+    .latest-news .news-block{margin-bottom: 30px;}
+    .latest-news .news-block .image-box{margin-bottom: 30px;}
+    .request-section .form-outer{padding-bottom: 0;}
+    .about-lawyers .content-box h2{font-size: 24px;}
+    .comment-thumb figure{display: inline-block;}
+    .comment-thumb .text{padding-left: 0; padding-top: 20px;}
+    .main-header .logo-outer{float: none !important; text-align: center;}
+    .main-header .header-upper .upper-right{float: none !important; text-align: center; padding-top: 0;}
+    .main-header .info-box{float: none !important; text-align: center;}
+    .navbar-toggle{background: #9d1b20; margin-top: 17px; float: left !important; padding: 10px;}
+    .navbar-toggle .icon-bar{background: #fff;}
+    .main-slider h2{font-size: 20px;}
+    .main-slider .text{font-size: 12px;}
+    .sub-banner .title{font-size: 28px;}
+    .input-field{margin-bottom: 0;}
+    .sec-title h2{font-size: 24px;}
+    .error-404 h1{font-size: 150px;}
+    .error-404 h2{font-size: 40px;}
+    .team-thumb img{width: 100%;}
+    .sidebar-right{margin-top: 30px;}
+    .award-winning-section .award-block .img-box{margin-bottom: 10px;}
+    .contact-form .form-group input[type="text"], .contact-form .form-group input[type="password"], .contact-form .form-group input[type="tel"], .contact-form .form-group input[type="email"], .contact-form .form-group textarea, .contact-form .form-group select{margin-bottom: 0;}
+    .welcome-img:after{content: "none"; display: none;}
+    .sidebar-right {border-left: 0; padding-left: 0;}
+    .fun-fact-testimonial-section .fun-fact-style-one:before{width: 100%;height: 350px; padding: 30px 20px 0;}
+    .fun-fact-testimonial-section .fun-fact-style-one .single-fun-fact h3{font-size: 24px;}
+    .fun-fact-testimonial-section .fun-fact-style-one .single-fun-fact p{font-size: 12px;}
+    .fun-fact-testimonial-section .fun-fact-style-one{padding: 50px 0 0;}
+    .faqs .panel-default > .panel-heading{padding: 0;}
+    .panel-title > a{padding: 0 10px;}
+    .faqs .panel-default > .panel-heading h4 a{font-size: 16px; font-weight: 600;}
+    .request-section .default-form button{padding: 20px;}
+    .get-solution .detail-box h3{font-size: 28px; margin-bottom: 20px;}
+    .get-solution .detail-box p{margin-bottom: 20px;}
+    .main-footer .about-widget .news-latter{max-width: 100%;}
+    .main-footer .practice-area{padding-left: 0;}
+    .main-footer .creative-list li{text-align: left;}
+    .main-footer .footer-widget h3{text-align: left;}
+    .main-footer .timing{padding-left: 0;}
+    .main-footer .timing ul li{text-align: left;}
+    .main-footer .widget-section{padding-bottom: 0;}
+    .about-lawyers{padding-top: 100px;}
+    .main-footer .footer-menu nav ul li{margin-right: 15px;}
+    .main-footer .footer-menu{padding: 40px 0;}
+    .bottom-strip .pull-left, .bottom-strip .pull-right {float: none !important; text-align: center;}
+    .bottom-strip .social-icon ul li{float: none !important; display: inline-block;}
+    .request-section .form-outer .inner-box{padding: 30px 20px;}
+    .call-us{padding: 0; text-align: }
+    .main-footer .call-us{text-align: center;}
+    .request-section .default-form .call-us p{font-size: 12px;}
+    .honors-box .icon-box{width: 75px;}
+    .honors-box .icon-box i{font-size: 30px;}
+    .sidebar-left{padding-right: 0; border-right: 0;}
+    .social-icon ul li{margin-left: 0; margin-right: 20px;}
+}
+
+/****************************************************************************
+    (320 X 480)
+****************************************************************************/
+
+@media only screen and (max-width: 480px)
+{
+
+    #header1 {  text-align: center;  position: static;  background: #005689;  padding: 10px 0px; margin-bottom: 10px; }
+    header .logo img {  width: auto;  }
+
+    header nav {  display: none;  }
+    .responsive_button { display: block;}
+    .responsive_nav.navbar-collapse {   margin-bottom: 10px;  }
+    #header1 .button {margin-top: 10px;}
+    #header2 .button {margin-top: 10px;}
+    header form {display: none;}
+    header .button {  float: none;  }
+
+    #header2 {  line-height: normal;  height: auto;  padding: 10px;text-align: center;  }
+    .slider .caption h3 {  font-size: 23px;}
+
+
+    .tp-caption.title-small { margin-left: 30px !important;  font-size: 7px !important; }
+    .tp-caption.title-bold { margin-left: 38px !important; }
+    .tp-caption.title-small:before { display: none; }
+    .tp-caption.title-small:after { display: none; }
+
+    .tp-caption .button {font-size: 8px; margin-top: 10px;  }
+    .tp-caption .button.last{margin-left: 60px;}
+
+    .info {  overflow: hidden;margin-bottom: 30px;  }
+    .info > img {  float: none !important;  margin: 0px;  margin-bottom: 30px;  width: 100%;  }
+
+    .skill_content {  width: 100%;  float: none;  padding: 48px 20px 0;  }
+    .skill_img {  width: 90%;  float: none;  position: relative;  margin: 0 auto;  }
+    .skill_img img{width: 100%;}
+
+    .consultation {  margin-bottom: 40px;  }
+
+    .statistics {  height: auto; }
+    .statistics_inner {  padding-bottom: 59px;  }
+    .statistics ul li {  margin-bottom: 30px;  width: 49%;  display: inline-block;  }
+
+    .statistics .heading_d {font-size: 12px}
+    .statistics .heading_d:before {display: none;}
+    .statistics .heading_d:after {display: none;}
+    .statistics2 p {font-size: 32px;}
+    .attorney figure {margin-bottom: -3px;  }
+
+    .news {  margin-bottom: 30px;  }
+    .partners_wrap a {  display: block;  margin-bottom: 20px;  }
+
+    .call_action .text-right {  text-align: left;  margin-top: 15px;  }
+    .consultation form {width: 100%;}
+
+    .consult_area i {  margin-bottom: 20px;  }
+    .consult_area {  text-align: center;  }
+    .info_wrap {  text-align: center;  }
+
+    .box {  margin-bottom: 30px;  }
+
+    .skill_counter { padding-top: 31px;  padding-left: 10px;  }
+    .skill_counter ul li {margin-bottom: 10px;  }
+    .skill_counter ul li a {font-size: 23px;}
+    .skill_counter ul li small {  font-size:8px;}
+    #tabs ul li a {padding: 11px 16px; display: block;  }
+
+    .cd-horizontal-timeline .timeline {max-width: 100%; margin: 0 auto;  }
+
+    .cd-horizontal-timeline .events ol li:nth-child(2) a {left:65px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(3) a {left:130px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(4) a {left:195px !important;}
+    .cd-horizontal-timeline .events ol li:nth-child(5) a {left:260px !important;}
+    .cd-horizontal-timeline .events ol li:last-child a {left:325px !important;}
+
+    .skill_img .heading_section {padding: 15px;  }
+    .skill_img .heading_section .heading_b {  color: #fff;  margin-bottom: 10px;  font-size: 10px;  line-height: 18px;  }
+    .skill_img .heading_section p {  color: #cccccc;  margin-bottom: 10px;  font-size: 10px;  line-height: 15px;  }
+
+    .attorney_detail .meta li {  margin-bottom: 11px;  }
+    .attorney_detail .social_icon {  text-align: left; }
+
+    article.post a img {  margin-bottom: 20px;  }
+    .recent_post ul li .col-md-4 {  float: left;  }
+    .cate {  text-align: center;  line-height: 27px;  }
+    .single .social_icon {  text-align: center;  margin-top: 13px;  }
+
+    .price_table {  margin-bottom: 30px;  }
+
+    .footer_widget {  margin-bottom: 35px;  }
+
+    .footer_nav nav li {  margin: 0px;  margin-right: 15px;  }
+    .footer_nav nav {  margin-bottom: 24px;  line-height: 30px;  }
+
+    footer {  background: #012b45;  height: auto;  padding: 30px 0;  line-height: normal;  text-align: center;  }
+    footer p {  color: #8d949a;  line-height: 26px;  margin-bottom: 20px;  }
+    footer  .social_icon {  text-align: center;  }
+
+
+    .slide_content {  padding-top: 25px;}
+    .slide_content h3 {  font-size: 8px;  }
+    .slide_content h3:after {display: none}
+    .slide_content h3:before {display: none}
+    .slide_content h1 {  font-size: 11px;  line-height: 18px;  margin: 8px 0px;  }
+    .slide_content a.button {  margin-right: 10px;  font-size: 7px;  padding: 6px 10px;  }
+    .main_slider .owl-prev{display:none;}
+    .main_slider .owl-next{display:none;}
+
+    /*/================Responsive================/*/
+
+
+    .main-menu .navigation > li > a{padding: 5px 10px;}
+    .main-menu .navigation{width: 300px;}
+    .main-menu .navigation > li{width: 100%;}
+    .main-menu .navigation > li > ul{width: 100%;}
+    .latest-news{padding: 60px 0 50px;}
+    .latest-news .news-block{margin-bottom: 30px;}
+    .latest-news .news-block .image-box{margin-bottom: 30px;}
+    .request-section .form-outer{padding-bottom: 0;}
+    .about-lawyers .content-box h2{font-size: 24px;}
+    .comment-thumb figure{display: inline-block;}
+    .comment-thumb .text{padding-left: 0; padding-top: 20px;}
+    .main-header .logo-outer{float: none !important; text-align: center;}
+    .main-header .header-upper .upper-right{float: none !important; text-align: center; padding-top: 0;}
+    .main-header .info-box{float: none !important; text-align: center;}
+    .navbar-toggle{background: #9d1b20; margin-top: 15px; float: left !important;}
+    .navbar-toggle .icon-bar{background: #fff;}
+    .main-slider h2{font-size: 20px;}
+    .main-slider .text{font-size: 12px;}
+    .sub-banner .title{font-size: 28px;}
+    .input-field{margin-bottom: 0;}
+    .sec-title h2{font-size: 24px;}
+    .error-404 h1{font-size: 150px;}
+    .error-404 h2{font-size: 40px;}
+    .team-thumb img{width: 100%;}
+    .sidebar-right{margin-top: 30px;}
+    .award-winning-section .award-block .img-box{margin-bottom: 10px;}
+    .contact-form .form-group input[type="text"], .contact-form .form-group input[type="password"], .contact-form .form-group input[type="tel"], .contact-form .form-group input[type="email"], .contact-form .form-group textarea, .contact-form .form-group select{margin-bottom: 0;}
+    .welcome-img:after{content: "none"; display: none;}
+    .sidebar-right {border-left: 0; padding-left: 0;}
+    .fun-fact-testimonial-section .fun-fact-style-one:before{width: 100%;height: 350px; padding: 30px 20px 0;}
+    .fun-fact-testimonial-section .fun-fact-style-one .single-fun-fact h3{font-size: 24px;}
+    .fun-fact-testimonial-section .fun-fact-style-one .single-fun-fact p{font-size: 12px;}
+    .fun-fact-testimonial-section .fun-fact-style-one{padding: 50px 0 0;}
+    .faqs .panel-default > .panel-heading{padding: 0;}
+    .panel-title > a{padding: 0 10px;}
+    .faqs .panel-default > .panel-heading h4 a{font-size: 16px; font-weight: 600;}
+    .request-section .default-form button{padding: 20px;}
+    .get-solution .detail-box h3{font-size: 28px; margin-bottom: 20px;}
+    .get-solution .detail-box p{margin-bottom: 20px;}
+    .main-footer .about-widget .news-latter{max-width: 100%;}
+    .main-footer .practice-area{padding-left: 0;}
+    .main-footer .creative-list li{text-align: left;}
+    .main-footer .footer-widget h3{text-align: left;}
+    .main-footer .timing{padding-left: 0;}
+    .main-footer .timing ul li{text-align: left;}
+    .main-footer .widget-section{padding-bottom: 0;}
+    .about-lawyers{padding-top: 100px;}
+    .main-footer .footer-menu nav ul li{margin-right: 5px;}
+    .main-footer .footer-menu{padding: 40px 0;}
+    .bottom-strip .pull-left, .bottom-strip .pull-right {float: none !important; text-align: center;}
+    .bottom-strip .social-icon ul li{float: none !important; display: inline-block;}
+    .social-icon ul li{margin-left: 0; margin-right: 20px;}
+    .main-footer .call-us{text-align: center;}
+    .main-footer .call-us h3{font-size: 16px;}
+    .main-footer .call-us h3 strong{font-size: 20px;}
+    .main-footer .footer-menu .navigation{display: none;}
+
+}
+/****************************************************************************
+    (320 X 480)
+****************************************************************************/
+@media only screen and (max-width: 480px)
+{
+    .tp-parallax-wrap{
+        top: 20px !important;
+    }
+    .main-slider h2{
+        font-size: 16px;
+        margin-top: 50px;
+        line-height: 1.5;
+    }
+    .main-slider .text{
+        margin-top: 100px;
+        font-size: 10px;
+        line-height: 1.5;
+    }
+    .main-menu .navigation{
+        width: 260px;
+    }
+}

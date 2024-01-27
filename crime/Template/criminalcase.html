@@ -1,0 +1,73 @@
+{% extends 'citizenhome.html' %}
+{% block content %}
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        	    <script type="text/javascript" src="{% static 'validation.js' %}"></script>
+
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+<h3 class="w3l-titles">Criminal Case</h3>
+<form action="{% url 'criminal' %}" method="post" name="f2">
+    {% csrf_token %}
+    <table  align="center">
+
+        <tr>
+            <th>CASE DETAILS</th>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td><input type="date" name="date"/><br></td>
+
+        <tr>
+            <td>Culprit Name</td>
+            <td><input type="text" name="cname" required onchange="return fn_allLetter(document.f2.cname);"/><br></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio"value="male"name="gen">male</td>
+            <td><input type="radio"value="female"name="gen">female</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="text" name="age" required onchange="return fn_checknumber(document.f2.age);"/><br></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="address" placeholder="Address" required=""></textarea><br><br></td>
+        </tr>
+        <tr>
+            <td>Culprit Contact</td>
+            <td><input type="text" name="cnum" required onchange="return fn_checkmobile(document.f2.cnum);"/><br></td>
+        </tr>
+
+        <tr><br><br>
+            <td>Remarks</td>
+            <td><textarea name="remarks" placeholder="Remarks" required=""></textarea><br><br></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add"> </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
+{% endblock %}

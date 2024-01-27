@@ -1,0 +1,44 @@
+{% extends 'lawerhome.html' %}
+{% block content %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+                    	    <script type="text/javascript" src="{% static 'validation.js' %}"></script>
+
+</head>
+<body>
+<form method="post" action="{% url 'lawerchangepass' %}">
+    {% csrf_token %}
+<table align="center">
+    <tr>
+        <th>Username</th><td>{{key}}</td>
+    </tr>
+    <tr>
+        <th>Old Password</th><td><input type="password" name="opwd" required></td>
+    </tr>
+    <tr>
+        <th>New Password</th><td><input type="password" name="npwd" required></td>
+    </tr>
+    <tr>
+        <th></th><td><input type="submit" value="Add"></td>
+    </tr>
+</table>
+    </form>
+</body>
+</html>
+{% endblock %}

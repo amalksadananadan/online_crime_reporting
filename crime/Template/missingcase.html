@@ -1,0 +1,81 @@
+{% extends 'citizenhome.html' %}
+{% block content %}
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+            	    <script type="text/javascript" src="{% static 'validation.js' %}"></script>
+
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+<h3 class="w3l-titles">Missing Case</h3>
+<form action="{% url 'missing' %}" method="post" enctype="multipart/form-data" name="f2">
+    {% csrf_token %}
+    <table  align="center">
+
+        <tr>
+            <th>MISSING PERSON DETAILS</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" onchange="return fn_allLetter(document.f2.name);"/><br></td>
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio"value="male"name="gen">male</td>
+            <td><input type="radio"value="female"name="gen">female</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="text" name="age"  onchange="return fn_checknumber(document.f2.age);"/><br></td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td><input type="text" name="height" required  onchange="return fn_checknumber(document.f2.height);"/><br></td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td><input type="text" name="color" required onchange="return fn_allLetter(document.f2.color);"/><br></td>
+        </tr>
+        <tr>
+            <td>Identical Marks</td>
+            <td><input type="text" name="imarks" required onchange="return fn_allLetter(document.f2.imarks);"/><br></td>
+        </tr>
+        <tr>
+            <td>Missing Date</td>
+            <td><input type="date" name="mdate" required/><br></td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><input type="file" name="photo" required/><br></td>
+        </tr>
+        <tr><br><br>
+            <td>Remarks</td>
+            <td><textarea name="remarks" placeholder="Remarks" required=""></textarea><br><br></td>
+        </tr>
+
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add"> </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
+{% endblock %}

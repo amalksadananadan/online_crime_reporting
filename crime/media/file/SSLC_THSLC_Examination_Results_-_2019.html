@@ -1,0 +1,461 @@
+
+<!-- saved from url=(0051)http://keralaresults.nic.in/sslc2019duj946/sslc.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+        <title>SSLC/THSLC Examination Results - 2019 </title>
+        
+
+        <script language="javascript">
+            function initcon()
+            {
+                newwin();
+                setHeight();
+                document.fmhome.treg.value = "";
+                document.fmhome.dobd.value = "";
+                document.fmhome.dobm.value = "";
+                document.fmhome.doby.value = "";
+                document.fmhome.treg.focus();
+
+            }
+
+            function setHeight()
+            {
+                if (screen.height == '600')
+                {
+                    document.getElementById('headtd').height = '100px';
+                    document.getElementById('spantd').style.height = '188px';
+                    document.getElementById('tblmain').width = '600px';
+                }
+                else
+                {
+                    document.getElementById('headtd').height = '104px';
+                    document.getElementById('spantd').style.height = '320px';
+                    document.getElementById('tblmain').width = '780px';
+                }
+            }
+
+            function newwin()
+            {
+                if (self != top)
+                    top.location.href = "sslc.htm";
+            }
+
+            function IsNumeric(sText)
+            {
+                var ValidChars = "0123456789";
+                var IsNumber = true;
+                var Char;
+
+
+                for (i = 0; i < sText.length && IsNumber == true; i++)
+                {
+                    Char = sText.charAt(i);
+                    if (ValidChars.indexOf(Char) == -1)
+                    {
+                        IsNumber = false;
+                    }
+                }
+                return IsNumber;
+
+            }
+
+            function checkform()
+            {
+                if (document.fmhome.treg.value == "")
+                {
+                    alert("Enter Register number");
+                    document.fmhome.treg.value = "";
+                    document.fmhome.treg.focus();
+                    return false;
+                }
+
+                if (document.fmhome.treg.value.length < 6)
+                {
+                    alert("Enter valid Registration number");
+                    document.fmhome.treg.value = "";
+                    document.fmhome.treg.focus();
+                    return false;
+                }
+
+                if (IsNumeric(document.fmhome.treg.value) == false)
+                {
+                    alert("Please enter some valid Registration number");
+                    document.fmhome.treg.value = "";
+                    document.fmhome.treg.focus();
+                    return false;
+
+                }
+
+                dob=document.fmhome.dobd.value+"/"+document.fmhome.dobm.value+"/"+document.fmhome.doby.value;
+		if(!/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/.test(dob))
+		{
+		  alert('Enter valid Date : DD-MM-YYYY');                 
+		  document.fmhome.dobd.value="";
+		  document.fmhome.dobm.value="";
+		  document.fmhome.doby.value="";
+		  document.fmhome.dobd.focus();
+		  return false;
+		}
+
+                //	if (!document.fmhome.rexam[0].checked && !document.fmhome.rexam[1].checked  && !document.fmhome.rexam[2].checked)
+                // 	{
+                // no radio button is selected
+                //	alert("Select Exam");
+                //	return false;
+                //	}
+            }
+
+
+
+            function resetContents()
+            {
+                document.fmhome.treg.value = "";
+                document.fmhome.dobd.value = "";
+                document.fmhome.dobm.value = "";
+                document.fmhome.doby.value = "";
+                document.getElementById("showres").innerHTML = '';
+            }
+
+            function NavigateAjax(regno)
+            {
+                document.getElementById("showres").innerHTML = "";
+                if (checkform() != false)
+                {
+                    document.getElementById("showres").innerHTML = "<table width='100%' ><tr><td align='center'><img src='atom01.gif' style='border:0px'/></table></tr></td>";
+                    xmlHttp = GetXmlHttpObject()
+                    if (xmlHttp == null)
+                    {
+                        alert("Browser does not support HTTP Request")
+                        return
+                    }
+
+                    var url = "sslcres.asp?treg=" + regno + "&dob=" + dob;
+                    url = url + "&sid=" + Math.random();
+                    xmlHttp.onreadystatechange = stateChanged;
+                    xmlHttp.open("GET", url, true);
+                    xmlHttp.send(null);
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+
+            function stateChanged()
+            {
+                //if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+                if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                {
+                    document.getElementById("showres").innerHTML = "";
+                    document.getElementById("showres").innerHTML = xmlHttp.responseText
+                    document.getElementById("ctrltr").style.display = 'none';
+                    document.getElementById("lnktd").style.display = '';
+                }
+                else
+                {
+                    //document.getElementById("showres").innerHTML="";
+                }
+            }
+            function enableCheckAnoRes()
+            {
+                document.getElementById("ctrltr").style.display = '';
+                document.getElementById("lnktd").style.display = 'none';
+                document.getElementById("showres").innerHTML = "";
+                document.fmhome.treg.value = "";
+                document.fmhome.dobd.value = "";
+                document.fmhome.dobm.value = "";
+                document.fmhome.doby.value = "";
+                document.fmhome.treg.focus();
+            }
+            function GetXmlHttpObject(handler)
+            {
+                var objXMLHttp = null
+                if (window.XMLHttpRequest)
+                {
+                    objXMLHttp = new XMLHttpRequest()
+                }
+                else if (window.ActiveXObject)
+                {
+                    objXMLHttp = new ActiveXObject("Microsoft.XMLHTTP")
+                }
+                return objXMLHttp
+            }
+            function movetoNext(current, nextFieldID)
+            {
+                if (current.value.length >= current.maxLength)
+                {
+                    document.getElementById(nextFieldID).focus();
+                }
+            }
+        </script>
+        <style> <!--
+            .D { background-color: #93008E ; color: ffffff ; font-family: verdana ; font-size: 13 }
+            .L { background-color: #A95B97 ; color: ffffff ; font-family: verdana ; font-size: 13 }
+            .R{ background-color:#996633; color:#3333FF; font-family:verdana ; font-size:13}
+            .r1{ background-color:#CDCDCD; color:#305876;font-family:verdana ; font-size:13}
+            .r2{ background-color:#FFFFFF; color:#305876;font-family:verdana ; font-size:13}
+            .r3{ background-color:#F0F5F9; color:#305876;font-family:verdana ; font-size:13}
+            .r4{ background-color:#305876; color:#FFFFFF;font-family:verdana ; font-size:13}
+            .Y { color: e9ef45 }
+            .S { font-size: 12 }
+            .dob { width:25px;border:1 solid darkmagenta;font-family:verdana;font-size:11px;background:#fafaca;" }
+                   td{font-family: verdana ; font-size:13px;}
+                   a.hov:link { color: blue; text-decoration:none; }
+                   a.hov:active { color: blue; text-decoration:none; }
+                   a.hov:visited { color: #660033;#CC00CC; text-decoration:none; }
+                   a.hov:hover { xcolor: blue; font-weight:bold;text-decoration:none; }
+                   a.lnkchkAno:link { color: #660000;font-weight:bold;font-size:13px; font-family:verdana; text-decoration:none; background:#cdcdcd}
+                   a.lnkchkAno:active { color: #660000;font-weight:bold;font-size:13px; font-family:verdana; text-decoration:none; background:#cdcdcd }
+                   a.lnkchkAno:visited { color: #660000;font-weight:bold;font-size:13px; font-family:verdana; text-decoration:none; background:#cdcdcd }
+                   a.lnkchkAno:hover { color: #0000ff;font-weight:bold;font-size:13px; font-family:verdana; text-decoration:none; background:#cdcdcd}
+                   --></style>
+            <link type="text/css" href="./SSLC_THSLC Examination Results - 2019_files/jquery.datepick.css" rel="stylesheet">
+            <style type="text/css">
+                body > iframe { display: none; }
+            </style>
+
+        </head>
+        <body onload="initcon()" onfocus="setHeight()" bottommargin="0" leftmargin="0" rightmargin="0" topmargin="3" bgcolor="#D7D7D7">
+
+            <form name="fmhome" onsubmit="NavigateAjax();
+                    return false;">
+
+                <table id="tblmain" align="center" bgcolor="#ffffff" border="0" xstyle="MARGIN-LEFT:1; COLOR:#660000" width="780px">
+                    <tbody><tr xvalign="middle">
+                        <td id="headtd" align="center" width="780" xheight="90" background="./SSLC_THSLC Examination Results - 2019_files/sslcbg.gif" height="104px">
+                            <table>
+                                <tbody><tr>
+                                    <td style="font-family: Trebuchet MS; font-size: 25px;color:#183852" align="center">Government of Kerala</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Trebuchet MS; font-size: 25px; color:#660000">Secondary School Leaving Certificate(SSLC)/THSLC</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Trebuchet MS; font-size: 25px;color:Navy" align="center">
+                                        Examination Results <font style="font-weight:bold;font-size:30px;">2019</font></td>
+                                </tr>
+                            </tbody></table>
+                            <!--
+                            <IMG SRC="sslc.gif" borderer="0" ALT="SSLC Examination Results 2017">   
+                            -->
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td xheight="300">
+                            <table align="center" border="0" width="100%">
+                                <tbody><tr>
+                                    <td colspan="3" style="text-align:center;font-family: Trebuchet MS; font-size: 15px;color:#183852">
+                                        <i>SSLC EXAMINATION 2019 RESULT</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">&nbsp;</td>
+                                </tr>
+                                <tr id="ctrltr" style="display: none;">
+                                    <td align="right" style="width: 351px; height: 41px">   Register Number    </td>
+                                    <td align="center" style="height: 41px; width: 128px;">
+                                        <input type="text" name="treg" maxlength="6" onkeyup="movetoNext(this, &#39;dobd&#39;)" style="FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #E8E8E8; WIDTH: 97px; COLOR: #9933FF;  FONT-FAMILY: verdana; TEXT-ALIGN: center; BORDER:2 solid #3366CC">								
+                                    </td>
+                                    <!--		</tr>
+                                    
+                                    <tr id="ctrldr"> -->
+                                    <!--	</tr>
+                                    
+                                    <tr id="ctrlbr"> -->
+
+                                    <td align="left" style="height: 35px; width:500px;100%;"> 
+                                        Date of Birth 
+                                        <input type="text" onkeyup="movetoNext(this, &#39;dobm&#39;)" id="dobd" name="dobd" class="dob" maxlength="2" title="Day as DD">
+                                        -<input name="dobm" id="dobm" onkeyup="movetoNext(this, &#39;doby&#39;)" type="text" class="dob" maxlength="2" title="Month as MM">
+                                        -<input type="text" id="doby" name="doby" class="dob" maxlength="4" title="Year as YYYY" style="width:35px">&nbsp;&nbsp;&nbsp;
+                                        <input type="button" name="bsubmit" value="Get Result" onclick="return NavigateAjax(treg.value)" style="FONT-WEIGHT:bold; COLOR:#ffffff; BORDER:2 solid #1181a4; BACKGROUND-COLOR:#33A2C6">&nbsp;
+                                        <input type="button" value=" Reset " name="breset" onclick="resetContents()" style="BORDER:2 solid #1181a4; FONT-WEIGHT: bold;  COLOR: #ffffff; BACKGROUND-COLOR:#33A2C6">
+                                    </td>
+                                </tr>    
+                                <tr>
+                                    <td align="right" colspan="1" style="height: 41px; width: 151px;"> </td>
+                                    <td align="right" colspan="1" style="height: 41px; width: 128px;"> </td>
+                                    <td colspan="1" align="right" style="height: 41px;width:130px;"> 
+                                        <span style="align:right"> 
+                                            <a href="http://keralaresults.nic.in/sslc2019duj946/swr_sslc.htm">
+                                                <font size="1">School Wise Results</font>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr id="lnktd" style="">
+                                    <td colspan="3" align="center" style="height: 24px">&nbsp;&nbsp;
+                                        <a href="javascript:void enableCheckAnoRes()" class="lnkchkAno">
+                                            CHECK ANOTHER RESULT&nbsp;
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td id="spantd" height="320" style="height: 320px;">
+                            <span id="showres" valign="top" style="WIDTH: 100%; HEIGHT: 100%; BACKGROUND-COLOR: transparent; TEXT-ALIGN: center">
+<br>
+	<table border="0" align="center" width="70%" bgcolor="#BAD1E2" style="color:#305876;font-weight:bold; font-size:14px">
+		
+
+		<!-- <tr>
+			<td align="center" style="font-size:18px;font-family:verdana;">SSLC Examination Results 2013 (Regular Scheme)<br></td>
+		</tr> -->
+
+		<tbody><tr>
+			<td>
+				
+				<table align="center" width="100%" cellpadding="2">
+				<tbody><tr class="r2">
+							<!-- <td >Code</td> -->
+							<td colspan="2" align="center" style="background:transparent;">
+							 
+							
+							</td>
+						</tr>
+						
+						<tr class="r4">
+							<td width="50%">Register number</td>
+							<td> 306414 </td>
+						</tr>
+						<tr class="r3">
+							<td>Name of Candidate</td>
+							<td> ARATHY REGHU </td>
+						</tr>
+						<tr class="r3">
+							<td>Guardian Name</td>
+							<td> REGHU KUTTAPPAN </td>
+						</tr>
+						<tr class="r3">
+							<td>Date of Birth</td>
+							<td> 9 Sep 2003
+						    </td>
+						</tr>
+						<tr class="r3">
+							<td>Sex</td>
+							<td> F </td>
+						</tr>
+						<tr class="r3">
+							<td>Caste</td>
+							<td> EZHAVA                                             </td>
+						</tr>
+						<tr class="r3">
+							<td>Category</td>
+							<td> OBC </td>
+						</tr>
+						<!--<tr>
+							<td colspan="2" style="background:white"><br></td>
+						</tr>-->
+						<tr class="r4">
+							<td align="center">Subjects</td>
+							<td align="center"> Grade </td>
+						</tr>
+
+						<tr class="r2">
+							<td style="font-weight:normal ">First Language Paper I</td>
+							<td align="center">A+ </td>
+						</tr>
+						<tr class="r3">
+							<td style="font-weight:normal ">First Language Paper II</td>
+							<td align="center">A+ </td>
+						</tr>
+						<tr class="r2">
+							<td style="font-weight:normal ">English </td>
+							<td align="center">C+ </td>
+						</tr>						
+						<tr class="r3">
+							<td style="font-weight:normal ">Hindi/General Knowledge</td>
+							<td align="center">C+ </td>
+						</tr>
+						<tr class="r2">
+							<td style="font-weight:normal ">Social Science</td>
+							<td align="center">A </td>
+						</tr>
+						<tr class="r3">
+							<td style="font-weight:normal ">Physics </td>
+							<td align="center">C+ </td>
+						</tr>
+						<tr class="r2">
+							<td style="font-weight:normal ">Chemistry </td>
+							<td align="center">D+</td>
+						</tr>
+						<tr class="r3">
+							<td style="font-weight:normal ">Biology</td>
+							<td align="center">B+ </td>
+						</tr>
+						<tr class="r2">
+							<td style="font-weight:normal ">Mathematics</td>
+							<td align="center">B  </td>
+						</tr>						
+						<tr class="r3">
+							<td style="font-weight:normal ">Information Technology</td>
+							<td align="center">A  </td>
+						</tr>
+						<tr class="r2">
+							<td style="font-weight:normal ">Grace</td>
+							<td align="center">                                                   </td>
+						</tr>
+						<tr class="r4" style="color:yellow;">
+							<td>Result</td>
+							<td align="center">
+							EHS      </td>
+						</tr>
+						<tr class="r2">
+							<td align="left" colspan="2"><u>Legend for Result:</u> <br>
+
+								<br>EHS : Eligible for Higher Studies
+								<br>NHS : Not Eligible for Higher Studies
+								<br>RAL : Result Announced Later
+								
+								</td><!--<td> <imgx src=http://localhost/qrgen/CreateImg.asp?BackColor=White&BarColor=Black&Data=REGNO:306414,FL1:Ap,FL2:Ap,ENG:Cp,HND/GK:Cp,SS:A&ModuleSize=0.07&&Level=40&Mask=0&Orientation=2&Version=1&ExtraWidth=60&ExtraHeight=70>
+								
+								</td> -->
+
+						</tr>
+
+					</tbody></table>
+			</td>
+		</tr>
+	
+
+	
+</tbody></table>
+<br>
+</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="footertd" align="center" height="70" background="./SSLC_THSLC Examination Results - 2019_files/sslcbg.gif" xbgcolor="#305876" style="color:#1D3252">
+                            Data Provided By Board of Public Examinations, Kerala.
+                            <br>
+                            IT Support by <a target="_blank" href="http://www.kerala.nic.in/" class="hov" style="TEXT-DECORATION:none;xcolor:#5305876">
+                                National Informatics Centre</a>, Kerala State Centre.<br>
+                            <br>
+                            <div style="font-face:verdana;font-size:10px;color:#0F3D6A">
+                                <u>Disclaimer</u>:  
+                                Neither NIC nor Board of Public Examinations is responsible for any inadvertent error that may have
+                                <br> 
+                                crept in the results being published on net. The results published on net are for immediate information to the examinees.
+                                <br>These cannot be treated as original mark sheets. Original marksheets will be issued by the Board of Public Examinations separately. 
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody></table>
+
+            </form>
+
+            <!--
+            <IFRAME id=gToday:normal:agenda.js 
+           style="BORDER-RIGHT: 2px ridge; BORDER-TOP: 2px ridge; Z-INDEX: 65535; VISIBILITY: hidden; BORDER-LEFT: 2px ridge; BORDER-BOTTOM: 2px ridge; POSITION: absolute; TOP: -30px" 
+           name=gToday:normal:agenda.js src="Jcal/ipopeng.htm" frameBorder=0 
+           width=168 scrolling=no height=202>
+           </IFRAME>
+            -->
+
+        
+    
+</body></html>

@@ -1,0 +1,86 @@
+{% extends 'stationhome.html' %}
+{% block content %}
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+<h3 class="w3l-titles">Criminal Case</h3>
+<form action="{% url 'assignmissing' key.cid %}" method="post" name="f2">
+    {% csrf_token %}
+    <table  align="center">
+
+        <tr>
+            <th>CASE DETAILS</th>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td><input type="date" name="date" value="{{key.date}}"/><br></td>
+
+        <tr>
+            <td>Culprit Name</td>
+            <td><input type="text" name="cname" value="{{key.cname}}" /><br></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            {% if key.gender == "male" %}
+            <td><input type="radio"value="male"name="gen" checked>male</td>
+            <td><input type="radio"value="female"name="gen">female</td>
+            {% else %}
+            <td><input type="radio"value="male"name="gen">male</td>
+            <td><input type="radio"value="female"name="gen" checked>female</td>
+            {% endif %}
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="text" name="age" value="{{key.age}}" /><br></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="address" placeholder="Address">{{key.address}}</textarea><br><br></td>
+        </tr>
+        <tr>
+            <td>Culprit Contact</td>
+            <td><input type="text" name="cnum" value="{{key.contact}}" /><br></td>
+        </tr>
+
+        <tr><br><br>
+            <td>Remarks</td>
+            <td><textarea name="remarks" placeholder="Remarks">{{key.remarks}}</textarea><br><br></td>
+        </tr>
+        <tr>
+    <td>Select Officer</td><td>
+    <select name="opn" >
+        <option value="0">--select--</option>
+        {% for i in off %}
+        <option value="{{i.id}}">{{i.officername}}</option>
+        {% endfor %}
+    </select>
+</td>
+</tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Assign"> </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
+{% endblock %}
